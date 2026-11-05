@@ -27,3 +27,12 @@ Aplikasi katalog produk sederhana menggunakan [DummyJSON API](https://dummyjson.
 - `lib/services/api_service.dart`: Integrasi API.
 - `lib/pages/`: Halaman List dan Detail.
 - `lib/widgets/`: Komponen UI (ErrorView).
+
+## Endpoint API
+Base URL: `https://dummyjson.com`
+
+| Metode | Path | Kegunaan |
+|---|---|---|
+| GET | `/products?limit=20` | Menampilkan daftar 20 produk awal |
+| GET | `/products/{id}` | Mendapatkan detail produk tertentu |
+| GET | `/products/search?q={query}` | Mencari produk berdasarkan kata kunci |
